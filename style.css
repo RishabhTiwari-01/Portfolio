@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  /* Nude Color Palette */
+  --color-primary: #fdfdfd; /* Beige */
+  --color-secondary: #eaddca; /* Light Tan */
+  --color-accent: #d2b48c; /* Tan */
+  --color-text: #4a4a4a; /* Dark Gray */
+  --color-heading: #2c2c2c; /* Very Dark Gray */
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  
+}
+.navbar {
+  background-color: #f0f0e8;
+}
+
+.name span{
+  color:#a16e54;
+}
+
+.navbarDiv {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+.navbarDiv a {
+  color: #4a4a4a;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 700;
+  position: relative;
+  padding: 10px 10px;
+  transition: color 0.3s ease;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbarDiv a:hover {
+  color: white;
+}
+
+.navbarDiv a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #a16e54;
+  color: white;
+  z-index: -1;
+  transform: scaleX(0); /* Initially hidden */
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform-origin: bottom;
+  border-radius: 5px;
+}
+
+.navbarDiv a:hover::before {
+  transform: scaleX(1); /* Expands on hover */
+  transform-origin: top;
+}
+
+
+.name2{
+    font-size: 3em;
+    font-weight: bold;
+    color: #333;
+    border-right: 2px solid rgba(0,0,0,.75); /* Blinking cursor */
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Hides extra text */
+    margin: 0;
+    animation: 
+        blink-caret .75s step-end infinite;
+}
+
+/* Blinking cursor animation */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgba(0,0,0,.75); }
+}
+
+
+.myWork {
+  background-color: #a16e54;
+  color: #343433;
+}
+.sendBtn {
+  background-color: #a16e54;
+  color: whitesmoke;
+}
+.logo {
+  color: #a16e54;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.section-heading {
+  color: var(--color-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+  animation: fadeIn 1s ease-in-out;
+}
+.section-heading::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: var(--color-accent);
+  margin: 0.5rem auto 0;
+  border-radius: 9999px;
+}
+
+/* Fade-in animation for sections */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover animation for buttons and cards */
+.hover-effect:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.hover-effect {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Smooth scroll effect */
+html {
+  scroll-behavior: smooth;
+}
+
+/* For icons */
+.icon {
+  transition: all 0.3s ease;
+}
+.icon:hover {
+  filter: grayscale(0%);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#page3 {
+  min-height: 100vh;
+  width: 100%;
+  padding: 5vw 0;
+}
+
+#page3 #page3p {
+  margin-left: 2vw;
+  margin-bottom: 15vw;
+  font-size: 1vw;
+  /* text-align: center; */
+  color: var(--color-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 6rem;
+  position: relative;
+  animation: fadeIn 1s ease-in-out;
+}
+#page3 #page3p::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: var(--color-accent);
+  margin: 0.5rem 0;
+  border-radius: 9999px;
+}
+
+#page3 p img {
+  width: 0.7vw;
+  height: 0.7vw;
+  margin: 0 1vw;
+}
+
+.elem {
+  height: 120px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 2vw;
+  border-bottom: 1px solid rgba(58, 57, 57, 0.753);
+  overflow: hidden;
+}
+
+.elem h1 {
+  font-size: 2vw;
+  position: relative;
+  z-index: 9;
+}
+
+.elem .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #d2b48c;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  transition: all ease 0.3s;
+}
+
+.elem:hover .overlay {
+  top: 0;
+}
+
+#fixed-image {
+  width: 30vw;
+  height: 20vw;
+  /* background-color: red; */
+  position: fixed;
+  border-radius: 10px;
+  z-index: 99;
+  left: 50%;
+  top: 25%;
+  display: none;
+  background-size: cover;
+  background-position: center;
+}
+

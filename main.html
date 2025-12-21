@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rishabh Tiwari - Frontend Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-primary text-text leading-relaxed">
+    <!-- Navigation Header -->
+    <header class="navbar sticky top-0 z-50 shadow-md">
+      <nav
+        class="container flex flex-col sm:flex-row justify-between items-center py-4"
+      >
+        <a href="#" class="text-2xl font-bold text-heading name"
+          >Rishabh <span>Tiwari</span></a
+        >
+        <div class="space-x-4 mt-4 sm:mt-0 navbarDiv">
+          <a
+            href="#about"
+            class="hover:text-accent font-semibold transition-colors duration-300"
+            >About</a
+          >
+          <a
+            href="#skills"
+            class="hover:text-accent font-semibold transition-colors duration-300"
+            >Skills</a
+          >
+          <a
+            href="#projects"
+            class="hover:text-accent font-semibold transition-colors duration-300"
+            >Projects</a
+          >
+          <a
+            href="#contact"
+            class="hover:text-accent font-semibold transition-colors duration-300"
+            >Contact</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+      <div id="fixed-image"></div>
+      <section
+        class="min-h-screen flex items-center justify-center text-center py-20 px-4"
+      >
+        <div class="fade-in-section">
+          <h1
+            class="text-4xl md:text-6xl font-extrabold text-heading animate-fadeIn name2"
+            id="name2"
+          ></h1>
+          <p class="text-xl md:text-2xl text-text mt-4">
+            A Passionate Frontend Web Developer
+          </p>
+          <div
+            class="flex flex-col sm:flex-row justify-center mt-8 space-y-4 sm:space-y-0 sm:space-x-4"
+          >
+            <a
+              href="#projects"
+              class="myWork text-grey px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-all duration-300 hover-effect"
+              >View My Work</a
+            >
+            <a
+              href="#contact"
+              class="bg-stone-300 text-heading px-6 py-3 rounded-full font-semibold hover:bg-stone-400 transition-all duration-300 hover-effect"
+              >Get In Touch</a
+            >
+            <!-- Resume Download Button -->
+            <!-- IMPORTANT: Replace href with the actual path to your resume file, e.g., href="Siddharth_Singh_Resume.pdf" -->
+            <a
+              href="#"
+              download
+              class="bg-stone-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-stone-600 transition-all duration-300 hover-effect"
+              >Download Resume</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="py-20 fade-in-section">
+        <div class="container text-center">
+          <h2 class="section-heading">About Me</h2>
+          <div
+            class="flex flex-col md:flex-row items-center justify-center gap-8 mt-12"
+          >
+            <div
+              class="w-48 h-48 rounded-full bg-secondary flex items-center justify-center overflow-hidden shadow-xl"
+            >
+              <svg
+                class="w-24 h-24 text-accent"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <p class="max-w-xl text-lg text-text leading-relaxed">
+              I am a passionate and dedicated fullstack  web developer with a
+              strong foundation in
+              <span class="text-heading font-semibold"
+                >HTML, CSS, and JavaScript, React and Mernstack</span
+              >. As a fresher, I am eager to apply my skills and contribute to
+              creating beautiful and functional web experiences. I am a quick
+              learner, always exploring new technologies like
+              <span class="text-heading font-semibold"> Bootstrap and tailwindcss</span>, and I am
+              excited to collaborate on projects that challenge me to grow.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="py-20 bg-secondary scroll-section">
+        <div class="container text-center">
+          <h2 class="section-heading">My Skills</h2>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-12"
+          >
+            <!-- Skill Card: HTML -->
+            <div
+              class="bg-white p-6 rounded-lg shadow-lg hover-effect flex flex-col items-center"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                alt="HTML5 Icon"
+                class="w-16 h-16 mb-4"
+              />
+              <span class="font-bold text-lg text-heading">HTML5</span>
+            </div>
+            <!-- Skill Card: CSS -->
+            <div
+              class="bg-white p-6 rounded-lg shadow-lg hover-effect flex flex-col items-center"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                alt="CSS3 Icon"
+                class="w-16 h-16 mb-4"
+              />
+              <span class="font-bold text-lg text-heading">CSS3</span>
+            </div>
+            <!-- Skill Card: JavaScript -->
+            <div
+              class="bg-white p-6 rounded-lg shadow-lg hover-effect flex flex-col items-center"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JavaScript Icon"
+                class="w-16 h-16 mb-4"
+              />
+              <span class="font-bold text-lg text-heading">JavaScript</span>
+            </div>
+            <!-- Skill Card: React -->
+            <div
+              class="bg-white p-6 rounded-lg shadow-lg hover-effect flex flex-col items-center"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                alt="React Icon"
+                class="w-16 h-16 mb-4"
+              />
+              <span class="font-bold text-lg text-heading">React</span>
+            </div>
+            <!-- Skill Card: Bootstrap -->
+            <div
+              class="bg-white p-6 rounded-lg shadow-lg hover-effect flex flex-col items-center"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                alt="Bootstrap Icon"
+                class="w-16 h-16 mb-4"
+              />
+              <span class="font-bold text-lg text-heading">Bootstrap</span>
+            </div>
+            <!-- Skill Card: Tailwind CSS -->
+            <div
+              class="bg-white p-6 rounded-lg shadow-lg hover-effect flex flex-col items-center"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+                alt="Tailwind CSS Icon"
+                class="w-16 h-16 mb-4"
+              />
+              <span class="font-bold text-lg text-heading">Tailwind CSS</span>
+            </div>
+
+            
+
+             <!-- // mongoose -->
+
+
+             <div
+              class="bg-white p-6 rounded-lg shadow-lg hover-effect flex flex-col items-center"
+            >
+              <img
+               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7S33Oq2FeRbyBBA6l1q8PwLVa3SzaONO-9Q&s"
+               alt="Express Logo"
+                
+                class="w-16 h-16 mb-4 object-contain"
+              />
+              <span class="font-bold text-lg text-heading">Express Js</span>
+            </div>
+
+            <!-- // node.js -->
+           
+             <div
+              class="bg-white p-6 rounded-lg shadow-lg hover-effect flex flex-col items-center"
+            >
+              <img
+               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2-c_7GRr1uNgQ6g0XN8sDhWVCg8LcN3e4Sg&s"
+               alt="Node Logo"
+                
+                class="w-22 h-20 mb-1 object-contain"
+              />
+              <span class="font-bold text-lg text-heading">Node Js</span>
+            </div>
+
+
+
+
+            <!-- /// new era -->
+
+
+
+
+            <div
+              class="bg-white p-6 rounded-lg shadow-lg hover-effect flex flex-col items-center"
+            >
+              <img
+               src="/images/mern img.png"
+               alt="MERN STACK Logo"
+                
+                class="w-22 h-20 mb-1 object-contain"
+              />
+              <span class="font-bold text-lg text-heading">MERN STACK</span>
+            </div>
+               
+            
+          </div>
+        </div>
+      </section>
+
+      
+
+
+      
+
+      <!-- Projects Section -->
+      <!-- <section id="projects" class="py-20 fade-in-section">
+            <div class="container text-center">
+                <h2 class="section-heading">My Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                    Project Card 1: E-commerce Website
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover-effect flex flex-col items-center text-center">
+                        <div class="w-full h-48 bg-stone-200 rounded-lg mb-4 flex items-center justify-center">
+                            <span class="text-heading font-semibold text-lg">Project Image Placeholder</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-heading">E-commerce Site (React)</h3>
+                        <p class="text-sm mt-2 mb-4">A modern e-commerce platform built with React, focusing on a clean UI/UX, state management, and reusable components.</p>
+                        <a href="#" class="bg-accent text-white px-4 py-2 rounded-full font-semibold text-sm opacity-50 cursor-not-allowed">View Project</a>
+                    </div>
+
+                    Project Card 2: Personal Blog
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover-effect flex flex-col items-center text-center">
+                        <div class="w-full h-48 bg-stone-200 rounded-lg mb-4 flex items-center justify-center">
+                            <span class="text-heading font-semibold text-lg">Project Image Placeholder</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-heading">Interactive Blog (JS)</h3>
+                        <p class="text-sm mt-2 mb-4">A dynamic personal blog application using pure JavaScript to handle routing, fetching content, and managing user interactions.</p>
+                        <a href="#" class="bg-accent text-white px-4 py-2 rounded-full font-semibold text-sm opacity-50 cursor-not-allowed">View Project</a>
+                    </div>
+                    
+                    Project Card 3: To-Do App
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover-effect flex flex-col items-center text-center">
+                        <div class="w-full h-48 bg-stone-200 rounded-lg mb-4 flex items-center justify-center">
+                            <span class="text-heading font-semibold text-lg">Project Image Placeholder</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-heading">Classic To-Do List (HTML/CSS)</h3>
+                        <p class="text-sm mt-2 mb-4">A fully responsive to-do list built from scratch with HTML and CSS to demonstrate foundational layout and styling skills.</p>
+                        <a href="#" class="bg-accent text-white px-4 py-2 rounded-full font-semibold text-sm opacity-50 cursor-not-allowed">View Project</a>
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <p class="text-lg italic text-text">More projects are in progress and will be added here soon!</p>
+                </div>
+            </div>
+        </section> -->
+
+      <section id="projects" class="py-20 fade-in-section">
+        <div id="page3" class="container">
+          <p id="page3p">PROJECTS</p>
+
+          <div id="elem-container">
+            <!-- <a href="https://rishabhtiwari-01.github.io/Todo-APP-List/" target="_blank">
+               -->
+              <a href="https://rishabhtiwari-01.github.io/Todo-APP-List/" target="_blank">
+            <div
+              id="elem1"
+              class="elem"
+              data-image="/images/Todo-list.png" 
+
+            >
+              <div class="overlay"></div>
+              <h1>To-Do App</h1>
+            </div>
+            </a>
+
+            <a href="https://rishabhtiwari-01.github.io/Weather-App/" target="_blank">
+            <div
+            
+              class="elem"
+              data-image="/images/Weather.png"
+            >
+              <div class="overlay"></div>
+              <h1>Weather App </h1>
+            </div>
+            </a>
+
+            <a href=" https://rishabhtiwari-01.github.io/Danger-game/" target="_blank">
+            <div class="elem" data-image="/images/snake.jpg">
+              <div class="overlay"></div>
+              <h1>Snake Game</h1>
+            </div>
+            </a>
+
+            <a href="https://rishabhtiwari-01.github.io/SimonSaysGame/" target="_blank">
+            <div
+              class="elem"
+              data-image="/images/simon.png "
+            >
+              <div class="overlay"></div>
+              <h1>Simon Says Game</h1>
+            </div>
+            </a>
+            
+            <a href="https://rishabhtiwari-01.github.io/clone-of-Amazon/" target="_blank">
+            <div
+              class="elem"
+              data-image="/images/amazon.jpg"
+            >
+              <div class="overlay"></div>
+              <h1>Amazon Clone</h1>
+            </div>
+            </a>
+
+          
+            <a href="https://rishabhtiwari-01.github.io/Calculator-machine/" target="_blank">
+            <div
+              class="elem"
+              data-image="/images/calculator.jpg"
+            >
+              <div class="overlay"></div>
+              <h1>Calculator</h1>
+            </div>
+            </a>
+           
+        </div>
+      </section>
+
+
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-20 bg-secondary fade-in-section">
+        <div class="container text-center">
+          <h2 class="section-heading">Get In Touch</h2>
+          <p class="text-lg max-w-xl mx-auto mt-4">
+            I'm currently seeking new opportunities and would love to connect.
+            Feel free to reach out via this form or connect with me on social
+            media.
+          </p>
+          <p></p>
+
+          <form
+            class="mt-8 max-w-lg mx-auto bg-white p-8 rounded-lg shadow-xl"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="a17f1c64-1bb4-4810-a102-2a2938a5a2be"
+            />
+            <input
+              type="hidden"
+              name="subject"
+              value="New Contact Form Submission from Web3Forms"
+            />
+            <input type="hidden" name="from_name" value="My Website" />
+
+              <div class="mb-4 text-left">
+                <label for="name" class="block text-sm font-medium text-heading mb-2">Name</label>
+                <input
+                  id="name"
+                  name="name"
+                  class="w-full p-3 rounded-md border border-gray-300 focus:outline-none"
+                  placeholder="Your name"
+                  type="text"
+                />
+              </div>
+              <div class="mb-4 text-left">
+                <label for="email" class="block text-sm font-medium text-heading mb-2">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  class="w-full p-3 rounded-md border border-gray-300 focus:outline-none"
+                  placeholder="Your email"
+                  type="email"
+                />
+              </div>
+              <div class="mb-6 text-left">
+                <label for="message" class="block text-sm font-medium text-heading mb-2">Message</label>
+                <textarea
+                  
+                  id="message"
+                  name="message"
+                  placeholder="Your message"
+                rows="5" class="w-full p-3 rounded-md border border-gray-300 focus:outline-none"
+                ></textarea>
+              </div>
+            
+            <button class="w-full sendBtn px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-all duration-300 hover-effect" type="submit">Send Message</button>
+          </form>
+
+          <div
+            class="flex flex-col sm:flex-row justify-center items-center mt-8 space-y-4 sm:space-y-0 sm:space-x-8"
+          >
+            <!-- LinkedIn Link -->
+            <a
+              href="https://www.linkedin.com/in/rishabh-tiwari-3b35302a4/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="icon px-6 py-4 rounded-lg shadow-lg hover-effect flex items-center space-x-2 transition-transform"
+            >
+              <svg
+                class="w-6 h-6 logo"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid meet"
+              >
+                <path
+                  d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.381 1.11-2.5 2.48-2.5s2.48 1.119 2.48 2.5zM.01 7.23h4.97v16.05h-4.97zM24.01 10.45c0-3.11-1.9-5.32-4.52-5.32-2.3 0-3.56 1.57-4.14 2.44v-2.07h-4.98v16.05h4.98v-8.77c0-1.93 1.05-2.91 2.56-2.91 1.51 0 2.22 1.09 2.22 2.91v8.77h4.98v-9.35z"
+                />
+              </svg>
+              <span class="font-semibold text-heading">LinkedIn</span>
+            </a>
+
+            <!-- GitHub Link -->
+            <a
+              href="https://github.com/RishabhTiwari-01"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="icon px-6 py-4 rounded-lg shadow-lg hover-effect flex items-center space-x-2 transition-transform"
+            >
+              <svg
+                class="w-6 h-6 logo"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid meet"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.6.111.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.068 3.65 17.7 3.65 17.7c-1.087-.744.084-.73.084-.73 1.205.084 1.838 1.238 1.838 1.238 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.221-.124-.3-.538-1.52.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.656 1.656.242 2.876.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.22.69.825.576 4.767-1.587 8.205-6.085 8.205-11.385C24 5.373 18.627 0 12 0Z"
+                />
+              </svg>
+              <span class="font-semibold text-heading">GitHub</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-center py-6">
+      <p class="text-sm">&copy; 2025 Rishabh Tiwari. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
