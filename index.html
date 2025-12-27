@@ -13,6 +13,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-primary text-text leading-relaxed">
+    <!-- <div id="cursor"></div>
+<div id="cursor-blur"></div> -->
     <!-- Navigation Header -->
     <header class="navbar sticky top-0 z-50 shadow-md">
       <nav
@@ -24,22 +26,22 @@
         <div class="space-x-4 mt-4 sm:mt-0 navbarDiv">
           <a
             href="#about"
-            class="hover:text-accent font-semibold transition-colors duration-300"
+            class="hover:text-[#E64829] font-semibold transition-colors duration-300"
             >About</a
           >
           <a
             href="#skills"
-            class="hover:text-accent font-semibold transition-colors duration-300"
+            class="hover:text-[#E64829] font-semibold transition-colors duration-300"
             >Skills</a
           >
           <a
             href="#projects"
-            class="hover:text-accent font-semibold transition-colors duration-300"
+            class="hover:text-[#E64829] font-semibold transition-colors duration-300"
             >Projects</a
           >
           <a
             href="#contact"
-            class="hover:text-accent font-semibold transition-colors duration-300"
+            class="hover:text-[#E64829] font-semibold transition-colors duration-300"
             >Contact</a
           >
         </div>
@@ -54,49 +56,51 @@
       >
         <div class="fade-in-section">
           <h1
-            class="text-4xl md:text-6xl font-extrabold text-heading animate-fadeIn name2"
+            class="text-4xl md:text-6xl font-extrabold text-white animate-fadeIn name2"
             id="name2"
           ></h1>
-          <p class="text-xl md:text-2xl text-text mt-4">
+          <p class="text-xl md:text-2xl text-[#E64829] mt-4 "
+      >
             A Passionate Frontend Web Developer
           </p>
           <div
-            class="flex flex-col sm:flex-row justify-center mt-8 space-y-4 sm:space-y-0 sm:space-x-4"
+            class="flex flex-col sm:flex-row justify-center mt-8 space-y-4 sm:space-y-0 sm:space-x-4  "
           >
             <a
               href="#projects"
-              class="myWork text-grey px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-all duration-300 hover-effect"
+              class="myWork text-grey px-5 py-4 rounded-full font-semibold hover:bg-opacity-90 transition-all duration-300 hover-effect text-align-center"
               >View My Work</a
             >
             <a
               href="#contact"
-              class="bg-stone-300 text-heading px-6 py-3 rounded-full font-semibold hover:bg-stone-400 transition-all duration-300 hover-effect"
+              class=" text-heading px-5 py-4 rounded-full font-semibold  transition-all duration-300 hover-effect getInTouch text-align-center"
               >Get In Touch</a
             >
             <!-- Resume Download Button -->
             <!-- IMPORTANT: Replace href with the actual path to your resume file, e.g., href="Siddharth_Singh_Resume.pdf" -->
             <a
-              href="#"
+              href="https://drive.google.com/file/d/1G8MJvqlvg4ElkNLhwtaanlEYgmMej4ff/view?usp=sharing"
               download
-              class="bg-stone-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-stone-600 transition-all duration-300 hover-effect"
-              >Download Resume</a
+              class=" text-white px-5 py-5 rounded-full font-semibold  transition-all duration-300 hover-effect downloadResume text-align-center"
+              target="_blank">Download Resume</a
             >
           </div>
         </div>
       </section>
 
       <!-- About Section -->
-      <section id="about" class="py-20 fade-in-section">
+       <section id="about" class="py-20 fade-in-section bg-[#5F3434]">
         <div class="container text-center">
-          <h2 class="section-heading">About Me</h2>
+          <h2 class="section-heading">About Me </h2>
+          <p class="subtitle">Full-stack Web Developer</p>
           <div
             class="flex flex-col md:flex-row items-center justify-center gap-8 mt-12"
           >
             <div
-              class="w-48 h-48 rounded-full bg-secondary flex items-center justify-center overflow-hidden shadow-xl"
+              class="w-48 h-48 rounded-full bg-white items-center justify-center overflow-hidden shadow-xl"
             >
               <svg
-                class="w-24 h-24 text-accent"
+                class="w-24 h-24 text-[#5F3434]"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -108,20 +112,64 @@
                 ></path>
               </svg>
             </div>
-            <p class="max-w-xl text-lg text-text leading-relaxed">
+            <p class="max-w-xl text-[20px] mt-4 text-text leading-relaxed">
               I am a passionate and dedicated fullstack  web developer with a
               strong foundation in
-              <span class="text-heading font-semibold"
+              <span class="text-[#E64829] font-semibold"
                 >HTML, CSS, and JavaScript, React and Mernstack</span
               >. As a fresher, I am eager to apply my skills and contribute to
               creating beautiful and functional web experiences. I am a quick
               learner, always exploring new technologies like
-              <span class="text-heading font-semibold"> Bootstrap and tailwindcss</span>, and I am
+              <span class="text-[#E64829] font-semibold"> Bootstrap and tailwindcss</span>, and I am
               excited to collaborate on projects that challenge me to grow.
             </p>
           </div>
         </div>
-      </section>
+      </section> 
+
+
+
+
+      <!-- // try once more -->
+
+
+
+
+      <!-- <section id="about" class="py-20 fade-in-section bg-[#5F3434]">
+  <div class="container text-center">
+    <h2 class="section-heading text-white">About Me</h2>
+    
+    <div class="flex flex-col md:flex-row items-center justify-center gap-12 mt-12">
+      
+      <div class="w-48 h-48 rounded-full bg-[#5F3434]/10 flex items-center justify-center overflow-hidden border-2 border-[#5F3434]/30 shadow-[0_0_20px_rgba(95,52,52,0.2)]">
+        <svg
+          class="w-24 h-24 text-[#5F3434]"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </div>
+
+      <p class="max-w-xl text-lg text-white text-left leading-relaxed">
+        I am a passionate and dedicated fullstack web developer with a
+        strong foundation in
+        <span class="text-[#1D3883] font-bold">HTML, CSS, JavaScript, React, and MERN stack</span>. 
+        As a fresher, I am eager to apply my skills and contribute to
+        creating beautiful and functional web experiences. . I am a quick
+              learner, always exploring new technologies like
+              <span class="text-[#1D3883] font-semibold"> Bootstrap and tailwindcss</span>, and I am
+              excited to collaborate on projects that challenge me to grow.
+      </p>
+      
+    </div>
+  </div>
+</section> -->
 
       <!-- Skills Section -->
       <section id="skills" class="py-20 bg-secondary scroll-section">
@@ -132,7 +180,7 @@
           >
             <!-- Skill Card: HTML -->
             <div
-              class="bg-white p-6 rounded-lg shadow-lg hover-effect flex flex-col items-center"
+              class=" p-6 rounded-lg hover-effect border-2 border-white/50 flex flex-col items-center htmlBox"
             >
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
@@ -143,7 +191,7 @@
             </div>
             <!-- Skill Card: CSS -->
             <div
-              class="bg-white p-6 rounded-lg shadow-lg hover-effect flex flex-col items-center"
+              class="  p-6 rounded-lg shadow-lg hover-effect border-2 border-white/50 flex flex-col items-center"
             >
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
@@ -154,7 +202,7 @@
             </div>
             <!-- Skill Card: JavaScript -->
             <div
-              class="bg-white p-6 rounded-lg shadow-lg hover-effect flex flex-col items-center"
+              class=" p-6 rounded-lg shadow-lg hover-effect border-2 border-white/50 flex flex-col items-center"
             >
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
@@ -165,7 +213,7 @@
             </div>
             <!-- Skill Card: React -->
             <div
-              class="bg-white p-6 rounded-lg shadow-lg hover-effect flex flex-col items-center"
+              class=" p-6 rounded-lg shadow-lg hover-effect border-2 border-white/50 flex flex-col items-center"
             >
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
@@ -176,7 +224,7 @@
             </div>
             <!-- Skill Card: Bootstrap -->
             <div
-              class="bg-white p-6 rounded-lg shadow-lg hover-effect flex flex-col items-center"
+              class=" p-6 rounded-lg shadow-lg hover-effect border-2 border-white/50 flex flex-col items-center"
             >
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
@@ -187,7 +235,7 @@
             </div>
             <!-- Skill Card: Tailwind CSS -->
             <div
-              class="bg-white p-6 rounded-lg shadow-lg hover-effect flex flex-col items-center"
+              class="  p-6 rounded-lg shadow-lg hover-effect border-2 border-white/50 flex flex-col items-center"
             >
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
@@ -203,7 +251,7 @@
 
 
              <div
-              class="bg-white p-6 rounded-lg shadow-lg hover-effect flex flex-col items-center"
+              class=" p-6 rounded-lg shadow-lg hover-effect border-2 border-white/50 flex flex-col items-center"
             >
               <img
                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7S33Oq2FeRbyBBA6l1q8PwLVa3SzaONO-9Q&s"
@@ -217,10 +265,10 @@
             <!-- // node.js -->
            
              <div
-              class="bg-white p-6 rounded-lg shadow-lg hover-effect flex flex-col items-center"
+              class=" p-6 rounded-lg shadow-lg hover-effect border-2 border-white/50 flex flex-col items-center"
             >
               <img
-               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2-c_7GRr1uNgQ6g0XN8sDhWVCg8LcN3e4Sg&s"
+               src="/images/nodejs.png"
                alt="Node Logo"
                 
                 class="w-22 h-20 mb-1 object-contain"
@@ -237,10 +285,10 @@
 
 
             <div
-              class="bg-white p-6 rounded-lg shadow-lg hover-effect flex flex-col items-center"
+              class=" p-6 rounded-lg shadow-lg hover-effect border-2 border-white/50 flex flex-col items-center"
             >
               <img
-               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdiBSrA-Rek4-JTef5-oe-RaUfFq3uEtBAgA&s"
+               src="/images/mernImg.png"
                alt="MERN STACK Logo"
                 
                 class="w-22 h-20 mb-1 object-contain"
@@ -303,20 +351,10 @@
         <div id="page3" class="container">
           <p id="page3p">PROJECTS</p>
 
-          <div id="elem-container">
+          <div id="elem-container"> 
             <!-- <a href="https://rishabhtiwari-01.github.io/Todo-APP-List/" target="_blank">
                -->
-              <a href="https://rishabhtiwari-01.github.io/Todo-APP-List/" target="_blank">
-            <div
-              id="elem1"
-              class="elem"
-              data-image="/images/Todo-list.png" 
-
-            >
-              <div class="overlay"></div>
-              <h1>To-Do App</h1>
-            </div>
-            </a>
+              
 
             <a href="https://rishabhtiwari-01.github.io/Weather-App/" target="_blank">
             <div
@@ -330,7 +368,7 @@
             </a>
 
             <a href=" https://rishabhtiwari-01.github.io/Danger-game/" target="_blank">
-            <div class="elem" data-image="/images/snake.jpg">
+            <div class="elem" data-image="/images/snakeGame.jpg">
               <div class="overlay"></div>
               <h1>Snake Game</h1>
             </div>
@@ -339,34 +377,57 @@
             <a href="https://rishabhtiwari-01.github.io/SimonSaysGame/" target="_blank">
             <div
               class="elem"
-              data-image="/images/simon.png "
+              data-image="/images/Simon2.png "
             >
               <div class="overlay"></div>
               <h1>Simon Says Game</h1>
             </div>
             </a>
             
-            <a href="https://rishabhtiwari-01.github.io/clone-of-Amazon/" target="_blank">
+            <a href="https://e-commerce-fronted-k6x7.onrender.com" target="_blank">
             <div
               class="elem"
-              data-image="/images/amazon.jpg"
+              data-image="/images/E-commerce.png"
             >
               <div class="overlay"></div>
-              <h1>Amazon Clone</h1>
+              <h1>E-commerce Clone</h1>
             </div>
             </a>
 
           
-            <a href="https://rishabhtiwari-01.github.io/Calculator-machine/" target="_blank">
+            
+
+
+            <!-- //check out -->
+        <!-- /// CHATGPT CLONE PROJECT -->
+
+            <a href="https://chatgpt-clone-fronted.onrender.com" target="_blank">
             <div
               class="elem"
-              data-image="/images/calculator.jpg"
+              data-image=" /images/ChatgptClone2.png"
             >
               <div class="overlay"></div>
-              <h1>Calculator</h1>
+              <h1>Chat-Gpt</h1>
             </div>
             </a>
            
+
+
+
+             <!-- /// ZERODHA CLONE  -->
+
+            <a href="https://zerodha-clone-fronted.onrender.com" target="_blank">
+            <div
+              class="elem"
+              data-image="/images/ZerodhaClone.png"
+            >
+            
+              <div class="overlay"></div>
+              <h1>Zerodha-Clone</h1>
+              
+              
+            </div>
+            </a>
         </div>
       </section>
 
@@ -384,7 +445,7 @@
           <p></p>
 
           <form
-            class="mt-8 max-w-lg mx-auto bg-white p-8 rounded-lg shadow-xl"
+            class="mt-8 max-w-lg mx-auto bg-[#5F3434] p-8 rounded-lg shadow-xl"
             action="https://api.web3forms.com/submit"
             method="POST"
           >
@@ -401,38 +462,45 @@
             <input type="hidden" name="from_name" value="My Website" />
 
               <div class="mb-4 text-left">
-                <label for="name" class="block text-sm font-medium text-heading mb-2">Name</label>
+                <label for="name" class="block text-lg font-bold text-heading mb-2">Name</label>
                 <input
                   id="name"
                   name="name"
-                  class="w-full p-3 rounded-md border border-gray-300 focus:outline-none"
+                  class="w-full p-3 rounded-md border border-gray-300 focus:outline-none bg-transparent text-white"
                   placeholder="Your name"
                   type="text"
                 />
               </div>
               <div class="mb-4 text-left">
-                <label for="email" class="block text-sm font-medium text-heading mb-2">Email</label>
+                <label for="email" class="block text-lg font-bold text-heading mb-2">Email</label>
                 <input
                   id="email"
                   name="email"
-                  class="w-full p-3 rounded-md border border-gray-300 focus:outline-none"
+                  class="w-full p-3 rounded-md border border-gray-300 focus:outline-none bg-transparent"
                   placeholder="Your email"
                   type="email"
                 />
               </div>
               <div class="mb-6 text-left">
-                <label for="message" class="block text-sm font-medium text-heading mb-2">Message</label>
+                <label for="message" class="block text-lg font-bold text-heading mb-2">Message</label>
                 <textarea
                   
                   id="message"
                   name="message"
                   placeholder="Your message"
-                rows="5" class="w-full p-3 rounded-md border border-gray-300 focus:outline-none"
+                rows="5" class="w-full p-3 rounded-md border border-gray-300 focus:outline-none bg-transparent"
                 ></textarea>
               </div>
             
-            <button class="w-full sendBtn px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-all duration-300 hover-effect" type="submit">Send Message</button>
+            <button class="w-full sendBtn px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 
+            transition-all duration-300 hover-effect bg-[#191919]" type="submit">Send Message</button>
           </form>
+
+
+         
+
+
+          
 
           <div
             class="flex flex-col sm:flex-row justify-center items-center mt-8 space-y-4 sm:space-y-0 sm:space-x-8"

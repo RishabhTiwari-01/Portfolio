@@ -76,3 +76,40 @@ function typeWriter() {
 window.onload = function() {
     typeWriter();
 };
+
+
+
+
+
+
+
+
+/// cursor animation
+
+const cursor = document.querySelector("#cursor");
+const blur = document.querySelector("#cursor-blur");
+
+document.addEventListener("mousemove", function (details) {
+  // Cursor dot move karne ke liye
+  cursor.style.left = details.x + "px";
+  cursor.style.top = details.y + "px";
+  
+  // Blur effect ko thoda delay ke saath move karne ke liye
+  blur.style.left = details.x - 100 + "px";
+  blur.style.top = details.y - 100 + "px";
+});
+
+// Jab kisi Link ya Button par hover karein toh cursor bada ho jaye
+const allLinks = document.querySelectorAll("a, button, .hover-effect");
+allLinks.forEach((elem) => {
+  elem.addEventListener("mouseenter", () => {
+    cursor.style.scale = 3;
+    cursor.style.border = "1px solid white";
+    cursor.style.backgroundColor = "transparent";
+  });
+  elem.addEventListener("mouseleave", () => {
+    cursor.style.scale = 1;
+    cursor.style.border = "0px solid #5F3434";
+    cursor.style.backgroundColor = "#5F3434";
+  });
+});
