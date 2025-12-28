@@ -6,7 +6,7 @@
 }
 
 :root {
- 
+
   /* --color-primary: #fdfdfd;  */
   /* --color-primary: #070E20;  */
   /* --color-accent: #d2b48c;  */
@@ -33,7 +33,7 @@ body {
   background-color: #191919;
   /* color: var(--color-text); */
   color: white;
-  
+
 }
 
 
@@ -44,8 +44,8 @@ body {
 }
 
 
-.name span{
-  color:#A67F7F;
+.name span {
+  color: #A67F7F;
 }
 
 .navbarDiv {
@@ -81,7 +81,7 @@ body {
   background-color: #5F3434;
   color: white;
   z-index: -1;
-  transform: scaleX(0); 
+  transform: scaleX(0);
   transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transform-origin: bottom;
   border-radius: 5px;
@@ -89,36 +89,44 @@ body {
 
 
 .navbarDiv a:hover::before {
-  transform: scaleX(1); 
+  transform: scaleX(1);
   transform-origin: top;
 }
 
 
-.name2{
-    font-size: 3em;
-    font-weight: bold;
-    color: #D0D0D0;
-    border-right: 2px solid white; 
-    white-space: nowrap; 
-    overflow: hidden; 
-    margin: 0;
-    animation: 
-        blink-caret .75s step-end infinite;
+.name2 {
+  font-size: 3em;
+  font-weight: bold;
+  color: #D0D0D0;
+  border-right: 2px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+  animation:
+    blink-caret .75s step-end infinite;
 }
 
 
 
 /* Blinking cursor animation */
 @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: white; }
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: white;
+  }
 }
 
 
-.sendBtn{
+.sendBtn {
   border: 3px solid white;
   color: white;
 }
+
 .logo {
   color: #5F3434;
 }
@@ -128,6 +136,7 @@ body {
   margin: 0 auto;
   padding: 2rem;
 }
+
 .section-heading {
   /* color: var(--color-heading); */
   color: white;
@@ -137,7 +146,9 @@ body {
   margin-bottom: 2rem;
   position: relative;
   animation: fadeIn 1s ease-in-out;
+  margin-left: 32px;
 }
+
 .section-heading::after {
   content: "";
   display: block;
@@ -148,16 +159,17 @@ body {
   /* background-color: blue;  */
   background-color: #E64829;
   margin: 0.5rem auto 0;
-  margin-top: -5px;
+  margin-top: 21px;
   border-radius: 9999px;
+
 }
 
 
-.subtitle{
-      font-size: 24px;
-    margin-top: -9px;
-    margin-bottom: -32px;
-    margin-left: 205px;
+.subtitle {
+  font-size: 28px;
+  margin-top: 23px;
+  margin-bottom: -49px;
+  margin-left: 264px;
 }
 
 
@@ -168,6 +180,7 @@ body {
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
   will-change: opacity, transform;
 }
+
 .fade-in-section.is-visible {
   opacity: 1;
   transform: translateY(0);
@@ -175,30 +188,33 @@ body {
 
 /* Hover animation for buttons and cards */
 /* .hover-effect:hover { */
-  /* transform: translateY(-5px); */
-  /* box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+/* transform: translateY(-5px); */
+/* box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -2px rgba(0, 0, 0, 0.05); */
 
-    /* box-shadow: 0 10px 15px -3px rgb(87, 87, 87),
+/* box-shadow: 0 10px 15px -3px rgb(87, 87, 87),
     0 4px 6px -2px rgb(54, 54, 54); */
 /* } */
 /* Custom Cursor Dot */
 #cursor {
   height: 20px;
   width: 20px;
-  background-color: #5F3434; /* Aapka primary color */
+  background-color: #5F3434;
+  /* Aapka primary color */
   border-radius: 50%;
   position: fixed;
   z-index: 999;
   transition: all linear 0.1s;
-  pointer-events: none; /* Taaki buttons click ho sakein */
+  pointer-events: none;
+  /* Taaki buttons click ho sakein */
 }
 
 /* Cursor Glow/Blur Effect */
 #cursor-blur {
   height: 200px;
   width: 200px;
-  background-color: rgba(95, 52, 52, 0.15); /* Bohat halka glow */
+  background-color: rgba(95, 52, 52, 0.15);
+  /* Bohat halka glow */
   border-radius: 50%;
   position: fixed;
   filter: blur(40px);
@@ -210,13 +226,14 @@ body {
 
 .hover-effect {
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  background-color: rgba(255, 255, 255, 0.03); /* Card ko halka sa dark grey background */
- 
+  background-color: rgba(255, 255, 255, 0.03);
+  /* Card ko halka sa dark grey background */
+
 }
 
-.hover-effect:hover{
+.hover-effect:hover {
   transform: translateY(-5px);
-   box-shadow: 0 10px 15px -3px rgb(87, 87, 87),
+  box-shadow: 0 10px 15px -3px rgb(87, 87, 87),
     0 4px 6px -2px rgb(54, 54, 54);
 }
 
@@ -229,7 +246,7 @@ body {
   transform: scale(1.2) rotate(-5deg);
   transition: all 0.3s ease;
 }
- 
+
 
 
 /* Smooth scroll effect */
@@ -243,6 +260,7 @@ html {
 .icon {
   transition: all 0.3s ease;
 }
+
 .icon:hover {
   filter: grayscale(0%);
 }
@@ -251,6 +269,7 @@ html {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -269,7 +288,7 @@ html {
   /* text-align: center; */
   /* color: var(--color-heading); */
   color: rgb(221, 26, 26);
-  text-align: center ;
+  text-align: center;
   /* background-color: #5F3434; */
   font-size: 2.5rem;
   font-weight: 700;
@@ -277,13 +296,14 @@ html {
   position: relative;
   animation: fadeIn 1s ease-in-out;
 }
+
 #page3 #page3p::after {
   content: "";
   display: block;
   width: 80px;
   height: 4px;
   /* background-color: var(--color-accent); */
-  
+
   /* background-color: blue; */
   margin: 0.5rem 0;
   border-radius: 9999px;
@@ -350,14 +370,42 @@ html {
   border: 4px solid #5F3434;
 }
 
-.getInTouch{
+.getInTouch {
   background-color: white;
   border: 4px solid #5F3434;
   color: #5F3434
 }
-.downloadResume{
-  background-color: #5F3434; 
+
+.downloadResume {
+  background-color: #5F3434;
   color: white;
 }
 
 
+
+.mainPage {
+  background-image: url('images/mainPageBg.avif');
+
+}
+
+.aboutMe {
+  max-width: 100%;
+  height: 100%;
+}
+
+.contactPage{
+  background-image: url('images/ContactPageBg.avif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-size: contain; */
+}
+
+.contactForm{
+  box-shadow: 0 10px 15px -3px rgb(87, 87, 87),
+    0 4px 6px -2px rgb(54, 54, 54);
+}
+
+.contactLinks{
+  box-shadow: 0 10px 15px -3px rgb(54, 54, 54),
+    0 4px 6px -2px rgb(39, 39, 39);
+}
