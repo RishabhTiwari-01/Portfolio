@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rishabh Tiwari - Frontend Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-primary text-text leading-relaxed">
+    <!-- <div id="cursor"></div>
+<div id="cursor-blur"></div> -->
+    <!-- Navigation Header -->
+    <header class="navbar sticky top-0 z-50 shadow-md">
+      <nav
+        class="container flex flex-col sm:flex-row justify-between items-center py-4"
+      >
+        <a href="#" class="text-2xl font-bold text-heading name"
+          >Rishabh <span>Tiwari</span></a
+        >
+        <div class="space-x-4 mt-4 sm:mt-0 navbarDiv">
+          <a
+            href="#about"
+            class="hover:text-[#E64829] font-semibold transition-colors duration-300"
+            >About</a
+          >
+          <a
+            href="#skills"
+            class="hover:text-[#E64829] font-semibold transition-colors duration-300"
+            >Skills</a
+          >
+          <a
+            href="#projects"
+            class="hover:text-[#E64829] font-semibold transition-colors duration-300"
+            >Projects</a
+          >
+          <a
+            href="#contact"
+            class="hover:text-[#E64829] font-semibold transition-colors duration-300"
+            >Contact</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+      <div id="fixed-image"></div>
+      <section
+        class="min-h-screen flex items-center justify-center text-center py-20 px-4 mainPage"
+      >
+        <div class="fade-in-section">
+          <h1
+            class="text-4xl md:text-6xl font-extrabold text-white animate-fadeIn name2"
+            id="name2"
+          ></h1>
+          <p class="text-xl md:text-2xl text-[#E64829] mt-4 "
+      >
+            A Passionate Frontend Web Developer
+          </p>
+          <div
+            class="flex flex-col sm:flex-row justify-center mt-8 space-y-4 sm:space-y-0 sm:space-x-4  "
+          >
+            <a
+              href="#projects"
+              class="myWork text-grey px-5 py-4 rounded-full font-semibold hover:bg-opacity-90 transition-all duration-300 hover-effect text-align-center"
+              >View My Work</a
+            >
+            <a
+              href="#contact"
+              class=" text-heading px-5 py-4 rounded-full font-semibold  transition-all duration-300 hover-effect getInTouch text-align-center"
+              >Get In Touch</a
+            >
+            <!-- Resume Download Button -->
+            
+            <a
+              href="https://drive.google.com/file/d/1QFm2Enda9OP1g3Bf4LNnSsarC_dLWiYZ/view?usp=sharing"
+              download
+              class=" text-white px-5 py-5 rounded-full font-semibold  transition-all duration-300 hover-effect downloadResume text-align-center"
+              target="_blank">Download Resume</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+       <!-- <section id="about" class="py-20 fade-in-section bg-[#5F3434]">
+        <div class="container text-center">
+          <h2 class="section-heading">About Me </h2>
+          <p class="subtitle">Full-stack Web Developer</p>
+          <div
+            class="flex flex-col md:flex-row items-center justify-center gap-8 mt-12"
+          >
+            <div
+              class="w-48 h-48 rounded-full bg-white items-center justify-center overflow-hidden shadow-xl"
+            >
+              <!-- <svg
+                class="w-24 h-24 text-[#5F3434]"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg> -->
+            
+              <!-- <img src="/images/aboutMe.gif" class="aboutMe"/>
+
+            </div>
+            <p class="max-w-xl text-[20px] mt-4 text-text leading-relaxed">
+              I am a passionate and dedicated fullstack  web developer with a
+              strong foundation in
+              <span class="text-[#E64829] font-semibold"
+                >HTML, CSS, and JavaScript, React and Mernstack</span
+              >. As a fresher, I am eager to apply my skills and contribute to
+              creating beautiful and functional web experiences. I am a quick
+              learner, always exploring new technologies like
+              <span class="text-[#E64829] font-semibold"> Bootstrap and tailwindcss</span>, and I am -->
+              <!-- excited to collaborate on projects that challenge me to grow.
+            </p>
+          </div>
+        </div>
+      </section>  --> 
+
+
+
+
+
+
+
+
+      <section id="about" class="py-20 fade-in-section ">
+  <div class="container mx-auto text-center px-4">
+    <h2 class="section-heading text-white text-4xl font-bold mb-4">About Me</h2>
+    <p class="subtitle text-gray-300">Full-stack Web Developer</p>
+    
+    <div class="flex flex-col md:flex-row items-center justify-center gap-12 mt-12">
+      
+      <div class="w-64 h-64 md:w-80 md:h-80 rounded-full bg-white flex items-center justify-center overflow-hidden shadow-2xl border-4 border-[#E64829]">
+        <img src="images/aboutMe.gif" alt="About Me" class="w-full h-full object-cover" />
+      </div>
+
+      <p class="max-w-xl text-[22px] text-white leading-relaxed text-left md:text-left">
+        I am a passionate and dedicated fullstack web developer with a
+        strong foundation in
+        <span class="text-[#E64829] font-semibold">HTML, CSS, and JavaScript, React and Mernstack</span>. 
+        As a fresher, I am eager to apply my skills and contribute to
+        creating beautiful and functional web experiences. I am a quick
+        learner, always exploring new technologies like
+        <span class="text-[#E64829] font-semibold"> Bootstrap and tailwindcss</span>, and I am
+        excited to collaborate on projects that challenge me to grow.
+      </p>
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+      <!-- Skills Section -->
+      <section id="skills" class="py-20 bg-secondary scroll-section">
+        <div class="container text-center">
+          <h2 class="section-heading">My Skills</h2>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-12"
+          >
+            <!-- Skill Card: HTML -->
+            <div
+              class=" p-6 rounded-lg hover-effect border-2 border-white/50 flex flex-col items-center htmlBox"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                alt="HTML5 Icon"
+                class="w-16 h-16 mb-4"
+              />
+              <span class="font-bold text-lg text-heading">HTML5</span>
+            </div>
+            <!-- Skill Card: CSS -->
+            <div
+              class="  p-6 rounded-lg shadow-lg hover-effect border-2 border-white/50 flex flex-col items-center"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                alt="CSS3 Icon"
+                class="w-16 h-16 mb-4"
+              />
+              <span class="font-bold text-lg text-heading">CSS3</span>
+            </div>
+            <!-- Skill Card: JavaScript -->
+            <div
+              class=" p-6 rounded-lg shadow-lg hover-effect border-2 border-white/50 flex flex-col items-center"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JavaScript Icon"
+                class="w-16 h-16 mb-4"
+              />
+              <span class="font-bold text-lg text-heading">JavaScript</span>
+            </div>
+            <!-- Skill Card: React -->
+            <div
+              class=" p-6 rounded-lg shadow-lg hover-effect border-2 border-white/50 flex flex-col items-center"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                alt="React Icon"
+                class="w-16 h-16 mb-4"
+              />
+              <span class="font-bold text-lg text-heading">React</span>
+            </div>
+            <!-- Skill Card: Bootstrap -->
+            <div
+              class=" p-6 rounded-lg shadow-lg hover-effect border-2 border-white/50 flex flex-col items-center"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                alt="Bootstrap Icon"
+                class="w-16 h-16 mb-4"
+              />
+              <span class="font-bold text-lg text-heading">Bootstrap</span>
+            </div>
+            <!-- Skill Card: Tailwind CSS -->
+            <div
+              class="  p-6 rounded-lg shadow-lg hover-effect border-2 border-white/50 flex flex-col items-center"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+                alt="Tailwind CSS Icon"
+                class="w-16 h-16 mb-4"
+              />
+              <span class="font-bold text-lg text-heading">Tailwind CSS</span>
+            </div>
+
+            
+
+             <!-- // mongoose -->
+
+
+             <div
+              class=" p-6 rounded-lg shadow-lg hover-effect border-2 border-white/50 flex flex-col items-center"
+            >
+              <img
+               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7S33Oq2FeRbyBBA6l1q8PwLVa3SzaONO-9Q&s"
+               alt="Express Logo"
+                
+                class="w-16 h-16 mb-4 object-contain"
+              />
+              <span class="font-bold text-lg text-heading">Express Js</span>
+            </div>
+
+            <!-- // node.js -->
+           
+             <div
+              class=" p-6 rounded-lg shadow-lg hover-effect border-2 border-white/50 flex flex-col items-center"
+            >
+              <img
+               src="images/nodejs.png"
+               alt="Node Logo"
+                
+                class="w-22 h-20 mb-1 object-contain"
+              />
+              <span class="font-bold text-lg text-heading">Node Js</span>
+            </div>
+
+
+
+
+            <!-- /// new era -->
+
+
+
+
+            <div
+              class=" p-6 rounded-lg shadow-lg hover-effect border-2 border-white/50 flex flex-col items-center"
+            >
+              <img
+               src="images/mernImg.png"
+               alt="MERN STACK Logo"
+                
+                class="w-22 h-20 mb-1 object-contain"
+              />
+              <span class="font-bold text-lg text-heading">MERN STACK</span>
+            </div>
+               
+            
+          </div>
+        </div>
+      </section>
+
+      
+
+
+      
+
+      <!-- Projects Section -->
+      <!-- <section id="projects" class="py-20 fade-in-section">
+            <div class="container text-center">
+                <h2 class="section-heading">My Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                    Project Card 1: E-commerce Website
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover-effect flex flex-col items-center text-center">
+                        <div class="w-full h-48 bg-stone-200 rounded-lg mb-4 flex items-center justify-center">
+                            <span class="text-heading font-semibold text-lg">Project Image Placeholder</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-heading">E-commerce Site (React)</h3>
+                        <p class="text-sm mt-2 mb-4">A modern e-commerce platform built with React, focusing on a clean UI/UX, state management, and reusable components.</p>
+                        <a href="#" class="bg-accent text-white px-4 py-2 rounded-full font-semibold text-sm opacity-50 cursor-not-allowed">View Project</a>
+                    </div>
+
+                    Project Card 2: Personal Blog
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover-effect flex flex-col items-center text-center">
+                        <div class="w-full h-48 bg-stone-200 rounded-lg mb-4 flex items-center justify-center">
+                            <span class="text-heading font-semibold text-lg">Project Image Placeholder</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-heading">Interactive Blog (JS)</h3>
+                        <p class="text-sm mt-2 mb-4">A dynamic personal blog application using pure JavaScript to handle routing, fetching content, and managing user interactions.</p>
+                        <a href="#" class="bg-accent text-white px-4 py-2 rounded-full font-semibold text-sm opacity-50 cursor-not-allowed">View Project</a>
+                    </div>
+                    
+                    Project Card 3: To-Do App
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover-effect flex flex-col items-center text-center">
+                        <div class="w-full h-48 bg-stone-200 rounded-lg mb-4 flex items-center justify-center">
+                            <span class="text-heading font-semibold text-lg">Project Image Placeholder</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-heading">Classic To-Do List (HTML/CSS)</h3>
+                        <p class="text-sm mt-2 mb-4">A fully responsive to-do list built from scratch with HTML and CSS to demonstrate foundational layout and styling skills.</p>
+                        <a href="#" class="bg-accent text-white px-4 py-2 rounded-full font-semibold text-sm opacity-50 cursor-not-allowed">View Project</a>
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <p class="text-lg italic text-text">More projects are in progress and will be added here soon!</p>
+                </div>
+            </div>
+        </section> -->
+
+      <section id="projects" class="py-20 fade-in-section">
+        <div id="page3" class="container text-center">
+          <p class="section-heading">PROJECTS</p>
+
+          <div id="elem-container"> 
+            <!-- <a href="https://rishabhtiwari-01.github.io/Todo-APP-List/" target="_blank">
+               -->
+              
+
+            <a href="https://rishabhtiwari-01.github.io/Weather-App/" target="_blank">
+            <div
+            
+              class="elem"
+              data-image="images/Weather.png"
+            >
+              <div class="overlay"></div>
+              <h1>Weather App </h1>
+            </div>
+            </a>
+
+            <a href=" https://rishabhtiwari-01.github.io/Snake-Game/" target="_blank">
+            <div class="elem" data-image="images/snakeGame.jpg">
+              <div class="overlay"></div>
+              <h1>Snake Game</h1> 
+            </div>
+            </a>
+
+            <a href="https://rishabhtiwari-01.github.io/Simon-Say-Game-/" target="_blank">
+            <div
+              class="elem"
+              data-image="images/Simon2.png " 
+            >
+              <div class="overlay"></div>
+              <h1>Simon Says Game</h1>
+            </div>
+            </a>
+            
+            <a href="https://e-commerce-fronted-k6x7.onrender.com" target="_blank">
+            <div
+              class="elem"
+              data-image="images/E-commerce.png"
+            >
+              <div class="overlay"></div>
+              <h1>E-commerce Clone</h1>
+            </div>
+            </a>
+
+          
+            
+
+
+            <!-- //check out -->
+        <!-- /// CHATGPT CLONE PROJECT -->
+
+            <a href="https://chatgpt-clone-fronted.onrender.com" target="_blank">
+            <div
+              class="elem"
+              data-image=" images/ChatgptClone2.png"
+            >
+              <div class="overlay"></div>
+              <h1>Chat-Gpt</h1>
+            </div>
+            </a>
+           
+
+
+
+             <!-- /// ZERODHA CLONE  -->
+
+            <a href="https://zerodha-clone-fronted.onrender.com" target="_blank">
+            <div
+              class="elem"
+              data-image="images/ZerodhaClone.png"
+            >
+            
+              <div class="overlay"></div>
+              <h1>Zerodha-Clone</h1>
+              
+              
+            </div>
+            </a>
+        </div>
+      </section>
+
+
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-20 bg-secondary fade-in-section contactPage">
+        <div class="container text-center">
+          <h2 class="section-heading">Get In Touch</h2>
+          <p class="text-lg max-w-xl mx-auto mt-4">
+            I'm currently seeking new opportunities and would love to connect.
+            Feel free to reach out via this form or connect with me on social
+            media.
+          </p>
+          <p></p>
+
+          <form
+            class="mt-8 max-w-lg mx-auto p-8 rounded-lg  contactForm"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="a17f1c64-1bb4-4810-a102-2a2938a5a2be"
+            />
+            <input
+              type="hidden"
+              name="subject"
+              value="New Contact Form Submission from Web3Forms"
+            />
+            <input type="hidden" name="from_name" value="My Website" />
+
+              <div class="mb-4 text-left">
+                <label for="name" class="block text-lg font-bold text-heading mb-2">Name</label>
+                <input
+                  id="name"
+                  name="name"
+                  class="w-full p-3 rounded-md border border-gray-300 focus:outline-none bg-transparent text-white"
+                  placeholder="Your name"
+                  type="text"
+                />
+              </div>
+              <div class="mb-4 text-left">
+                <label for="email" class="block text-lg font-bold text-heading mb-2">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  class="w-full p-3 rounded-md border border-gray-300 focus:outline-none bg-transparent"
+                  placeholder="Your email"
+                  type="email"
+                />
+              </div>
+              <div class="mb-6 text-left">
+                <label for="message" class="block text-lg font-bold text-heading mb-2">Message</label>
+                <textarea
+                  
+                  id="message"
+                  name="message"
+                  placeholder="Your message"
+                rows="5" class="w-full p-3 rounded-md border border-gray-300 focus:outline-none bg-transparent"
+                ></textarea>
+              </div>
+            
+            <button class="w-full sendBtn px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 
+            transition-all duration-300 hover-effect bg-[#191919]" type="submit">Send Message</button>
+          </form>
+          
+
+          <div
+            class="flex flex-col sm:flex-row justify-center items-center mt-8 space-y-4 sm:space-y-0 sm:space-x-8"
+          >
+            <!-- LinkedIn Link -->
+            <a
+              href="https://www.linkedin.com/in/rishabh-tiwari-3b35302a4/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="icon px-6 py-4 rounded-lg hover-effect flex items-center space-x-2 transition-transform contactLinks"
+            >
+              <svg
+                class="w-6 h-6 logo"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid meet"
+              >
+                <path
+                  d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.381 1.11-2.5 2.48-2.5s2.48 1.119 2.48 2.5zM.01 7.23h4.97v16.05h-4.97zM24.01 10.45c0-3.11-1.9-5.32-4.52-5.32-2.3 0-3.56 1.57-4.14 2.44v-2.07h-4.98v16.05h4.98v-8.77c0-1.93 1.05-2.91 2.56-2.91 1.51 0 2.22 1.09 2.22 2.91v8.77h4.98v-9.35z"
+                />
+              </svg>
+              <span class="font-semibold text-heading">LinkedIn</span>
+            </a>
+
+            <!-- GitHub Link -->
+            <a
+              href="https://github.com/RishabhTiwari-01"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="icon px-6 py-4 rounded-lg hover-effect flex items-center space-x-2 transition-transform contactLinks"
+            >
+              <svg
+                class="w-6 h-6 logo"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid meet"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.6.111.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.068 3.65 17.7 3.65 17.7c-1.087-.744.084-.73.084-.73 1.205.084 1.838 1.238 1.838 1.238 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.221-.124-.3-.538-1.52.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.656 1.656.242 2.876.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.22.69.825.576 4.767-1.587 8.205-6.085 8.205-11.385C24 5.373 18.627 0 12 0Z"
+                />
+              </svg>
+              <span class="font-semibold text-heading">GitHub</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-center py-6">
+      <p class="text-sm">&copy; 2025 Rishabh Tiwari. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
